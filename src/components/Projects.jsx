@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import pic1 from '../assets/News.PNG'
 import pic2 from '../assets/Food.PNG'
-import pic3 from '../assets/weatH.PNG'
+import pic3 from '../assets/weath.PNG'
 import pic4 from '../assets/Todos.PNG'
 import { motion } from 'framer-motion'
 
