@@ -32,7 +32,7 @@ const Contacts = () => {
       <input name="name" placeholder="Your Name" required className=" w-full p-2 border" />
       <input name="email" type="email" placeholder="Your Email" required className="w-full p-2 border" />
       <textarea name="message" placeholder="Your Message" required className="w-full p-2 border" />
-      <button type="submit" className="bg-blue-500 text-white px-4 py-2">Send</button>
+      <button type="submit" className="bg-primary text-white px-4 py-2 rounded">Send</button>
     </form>
     </div>
     </div>
