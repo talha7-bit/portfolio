@@ -21,7 +21,7 @@ const Navbar = () => {
         </nav>
 
         
-        <div onClick={() => setshow(true)} className='md:hidden cursor-pointer mr-5'>
+        <div onClick={() => setshow(true)} className='md:hidden cursor-pointer'>
           <Menu className='w-6 h-6 text-foreground' />
         </div>
       </div>
@@ -29,7 +29,7 @@ const Navbar = () => {
       
       <div className={`md:hidden fixed top-0 left-0 w-screen h-screen transition-all duration-300 bg-background text-foreground z-40 ${show ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
         
-        <div className='flex justify-end mr-10'>
+        <div className='flex justify-end mt-3 mr-8'>
           <button className='h-8 w-8 cursor-pointer' onClick={() => setshow(false)}>❌</button>
         </div>
 

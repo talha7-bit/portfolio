@@ -20,9 +20,9 @@ const neoncolors=[
 ]
   
   return (
-    <div className='scroll-mt-16 md:scroll-mt-20 h-screen w-sm md:w-full' id='skills'>
-      <h1 className='text-2xl md:text-3xl text-primary-foreground font-bold mx-auto'>My<span className='px-2 text-primary'>Skills</span></h1>
-      <div className='grid grid-cols-3 md:grid-cols-4 pt-5 mx-15 gap-10'>
+    <div className='scroll-mt-16 md:scroll-mt-20 h-screen w-sm md:w-full mx-auto' id='skills'>
+      <h1 className='text-2xl md:text-3xl text-primary-foreground font-bold'>My<span className='px-2 text-primary'>Skills</span></h1>
+      <div className='grid grid-cols-3 md:grid-cols-4 pt-5 mx-10 gap-10'>
         {skills.map((skill,key)=>{
       const neon=neoncolors[key % neoncolors.length];
       return(
