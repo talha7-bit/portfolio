@@ -3,9 +3,18 @@ import pic1 from '../assets/News.PNG'
 import pic2 from '../assets/Food.PNG'
 import pic3 from '../assets/weath.PNG'
 import pic4 from '../assets/Todos.PNG'
+import pic5 from '../assets/Ecomress.PNG'
 import { motion } from 'framer-motion'
 
 const projects = [
+   {
+    id: 5,
+    title: "Ecomress Website",
+    description: "A modern fully responsive ecomress UI build using React TailwindCSS and Firebase",
+    img: pic5,
+    href:"https://ecomress.vercel.app/",
+    tags: ["html", "js", "react"]
+  },
   {
     id: 4,
     title: "Todo App",
