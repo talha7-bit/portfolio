@@ -4,29 +4,9 @@ import pic2 from '../assets/Food.PNG'
 import pic3 from '../assets/weath.PNG'
 import pic4 from '../assets/Todos.PNG'
 import pic5 from '../assets/Ecomress.PNG'
-import pic6 from '../assets/stream.PNG'
-import pic7 from '../assets/hms.PNG'
-
 import { motion } from 'framer-motion'
 
 const projects = [
-  {
-  id: 6,
-    title: "Hospital Manangement System",
-    description: "A complete MERN Stack project build for manangement",
-    img: pic7,
-    href:"https://frontendhmsp.vercel.app/",
-    tags: ["react","express","mongodb"]
-  },
-  {
-    id: 7,
-    title: "STREAM(chat app)",
-    description: "A complete MERN Stack Stream project build for chatting",
-    img: pic6,
-    href:"https://streamfrontendp.vercel.app",
-    tags: ["react","express","mongodb"]
-
-  },
    {
     id: 5,
     title: "Ecomress Website",

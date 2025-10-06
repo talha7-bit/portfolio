@@ -7,8 +7,8 @@ const Hhome = () => {
     <div className='w-screen h-screen flex flex-col items-center justify-center space-y-2'>
    <div className='opacity-0 animate-fade-in text-3xl font-bold'> <h1 >Hlo! I`m <span className='text-primary'>Talha</span></h1>
     </div>
-    <div className='opacity-0 text-2xl md:text-4xl animate-fade-in-delay-1 font-bold'><h2>MERN Stack Developer</h2></div>
-   <div className='opacity-0 text-sm md:text-lg animate-fade-in-delay-3 max-w-sm md:w-screen'><p>Crafting modern fast and user focused apps with React, Express, Node, Mongodb, Firebase, Gsap and Tailwind CSS</p></div>
+    <div className='opacity-0 text-2xl md:text-4xl animate-fade-in-delay-1 font-bold'><h2>React Developer</h2></div>
+   <div className='opacity-0 text-sm md:text-lg animate-fade-in-delay-3 max-w-sm md:w-screen'><p>Crafting modern fast and user focused apps with React, Firebase and Tailwind CSS</p></div>
     <div className='opacity-0 bg-primary mt-1 text-primary-foreground px-3 py-1 rounded md:text-lg animate-fade-in-delay-4'>
       <a href='#projects'>View My Projects</a></div>
     </div>

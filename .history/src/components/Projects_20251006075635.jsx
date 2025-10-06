@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
 
 const projects = [
   {
-  id: 6,
+  id: 7,
     title: "Hospital Manangement System",
     description: "A complete MERN Stack project build for manangement",
     img: pic7,
@@ -19,7 +19,7 @@ const projects = [
     tags: ["react","express","mongodb"]
   },
   {
-    id: 7,
+    id: 6,
     title: "STREAM(chat app)",
     description: "A complete MERN Stack Stream project build for chatting",
     img: pic6,

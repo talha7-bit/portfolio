@@ -3,7 +3,8 @@ import { motion } from 'framer-motion'
 
 const Skills = () => {
   const skills=[
-    
+    {name:"html",level:95,category:"frontened"},
+    {name:"css",level:95,category:"frontened"},
     {name:"express js",level:90,category:"backned"},
     {name:"javascript",level:85,category:"frontened"},
     {name:"react",level:80,category:"frontened"},

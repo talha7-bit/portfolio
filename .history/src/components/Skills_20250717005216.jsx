@@ -3,15 +3,14 @@ import { motion } from 'framer-motion'
 
 const Skills = () => {
   const skills=[
-    
-    {name:"express js",level:90,category:"backned"},
+    {name:"html",level:95,category:"frontened"},
+    {name:"CSS",level:95,category:"frontened"},
     {name:"javascript",level:85,category:"frontened"},
     {name:"react",level:80,category:"frontened"},
     {name:"tailwindcss",level:85,category:"frontened"},
     {name:"firebase",level:90,category:"frontened"},
     {name:"github",level:80,category:"frontened"},
-    {name:"mongodb",level:80,category:"backned"},
-    {name:"gsap",level:90,category:"frontened"}
+    {name:"vscode",level:90,category:"frontened"}
 ]   
 const neoncolors=[
   "hsl(320 100% 30%",
