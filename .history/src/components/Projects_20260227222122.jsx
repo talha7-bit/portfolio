@@ -170,7 +170,7 @@ const neoncolors=[
   }
 
   return (
-    <div className='scroll-mt-16 md:scroll-mt-20 mb-20 w-screen h-[80vh] flex flex-col items-center justify-center' id='projects'>
+    <div className='scroll-mt-16 md:scroll-mt-20 mb-20 w-90 h-screen flex flex-col items-center justify-center' id='projects'>
       <h1 className='text-3xl font-bold text-pink-500 '>Projects<span className='text-primary mx-2'>Featured</span></h1>
       <p className='mt-1 text-sm text-white'>Below is the list of the projects I have made during my learning</p>
       <div className='relative w-full max-w-sm md:max-w-6xl h-[36rem] overflow-hidden mx-auto'>

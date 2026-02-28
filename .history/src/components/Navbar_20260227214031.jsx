@@ -7,15 +7,17 @@ const Navbar = () => {
   return (
     <div className='w-full top-0 left-0 fixed z-50'>
       <div className='flex items-center justify-between mx-5 py-3'>
-        <h1 className='text-white font-bold text-xl'>
+        <h1 className='text-whitw font-bold text-xl'>
           Personal <span className='text-primary'>Portfolio</span>
         </h1>
 
-        <nav className='font-semibold text-white hidden md:block mr-10'>
+        {/* Desktop Menu */}
+        <nav className='font-semibold hidden md:block mr-10'>
           <a className='mx-2' href='#home'>Home</a>
           <a className='mx-2' href='#about'>About</a>
           <a className='mx-2' href='#skills'>Skills</a>
           <a className='mx-2' href='#projects'>Projects</a>
+          <a className='mx-2' href='#contact'>Contact</a>
         </nav>
 
         
@@ -37,6 +39,7 @@ const Navbar = () => {
           <a onClick={() => setshow(false)} href='#about'>About</a>
           <a onClick={() => setshow(false)} href='#skills'>Skills</a>
           <a onClick={() => setshow(false)} href='#projects'>Projects</a>
+          <a onClick={() => setshow(false)} href='#contact'>Contact</a>
         </nav>
       </div>
     </div>

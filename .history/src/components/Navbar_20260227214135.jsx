@@ -16,6 +16,7 @@ const Navbar = () => {
           <a className='mx-2' href='#about'>About</a>
           <a className='mx-2' href='#skills'>Skills</a>
           <a className='mx-2' href='#projects'>Projects</a>
+          <a className='mx-2' href='#contact'>Contact</a>
         </nav>
 
         
@@ -37,6 +38,7 @@ const Navbar = () => {
           <a onClick={() => setshow(false)} href='#about'>About</a>
           <a onClick={() => setshow(false)} href='#skills'>Skills</a>
           <a onClick={() => setshow(false)} href='#projects'>Projects</a>
+          <a onClick={() => setshow(false)} href='#contact'>Contact</a>
         </nav>
       </div>
     </div>

@@ -54,7 +54,7 @@ const File2 = () => {
     })
   },[])
  return (
-  <div id='about' ref={tref} className="relative min-h-screen overflow-hidden px-4 sm:px-6 md:px-12 lg:px-24">
+  <div ref={tref} className="relative min-h-screen overflow-hidden px-4 sm:px-6 md:px-12 lg:px-24">
 
     <div ref={ref} className="absolute inset-0"></div>
 
@@ -75,23 +75,19 @@ const File2 = () => {
         gap-6
         border-t-2 border-gray-300
         pt-6
-        w-[92%] sm:w-[85%] md:w-[80%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%]
+        w-[92%] sm:w-[85%] md:w-[80%] lg:w-[70%]
         scale-x-0 origin-center
       "
     >
       <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl 
                      font-bold text-gray-300 
-                     lg:w-200">
+                     lg:w-1/2">
         I'm a MERN Stack Developer
       </h1>
 
-      <h4 className="
-        text-sm sm:text-base md:text-lg lg:text-xl 
-        text-gray-300 
-        leading-relaxed
-        w-full lg:w-auto
-        max-w-none
-      ">
+      <h4 className="text-sm sm:text-base md:text-lg lg:text-xl 
+                     text-gray-300 
+                     lg:w-1/2 leading-relaxed">
         I'm a passionate and self-motivated web developer with a strong focus on building fast, interactive, and user-friendly applications using modern technologies including{" "}
         <span className="text-pink-400">
           React Node Express Mongodb Firebase Tailwindcss Gsap <span className="text-gray-300">&</span> Three J's

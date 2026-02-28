@@ -54,7 +54,7 @@ const File2 = () => {
     })
   },[])
  return (
-  <div id='about' ref={tref} className="relative min-h-screen overflow-hidden px-4 sm:px-6 md:px-12 lg:px-24">
+  <div ref={tref} className="relative min-h-screen overflow-hidden px-4 sm:px-6 md:px-12 lg:px-24">
 
     <div ref={ref} className="absolute inset-0"></div>
 

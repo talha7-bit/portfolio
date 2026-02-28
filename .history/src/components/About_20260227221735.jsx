@@ -54,7 +54,7 @@ const File2 = () => {
     })
   },[])
  return (
-  <div id='about' ref={tref} className="relative min-h-screen overflow-hidden px-4 sm:px-6 md:px-12 lg:px-24">
+  <div ref={tref} className="relative min-h-screen overflow-hidden px-4 sm:px-6 md:px-12 lg:px-24">
 
     <div ref={ref} className="absolute inset-0"></div>
 
@@ -81,7 +81,7 @@ const File2 = () => {
     >
       <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl 
                      font-bold text-gray-300 
-                     lg:w-200">
+                     lg:w-150">
         I'm a MERN Stack Developer
       </h1>
 

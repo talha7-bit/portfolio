@@ -54,47 +54,35 @@ const File2 = () => {
     })
   },[])
  return (
-  <div id='about' ref={tref} className="relative min-h-screen overflow-hidden px-4 sm:px-6 md:px-12 lg:px-24">
+  <div ref={tref} className='relative h-screen overflow-hidden'>
+    
+    <div ref={ref} className='absolute inset-0'></div>
 
-    <div ref={ref} className="absolute inset-0"></div>
-
-    <h1 className="absolute top-12 sm:top-16 md:top-20 left-4 sm:left-8 md:left-16 lg:left-24 
-                   z-10 bg-transparent 
-                   text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
-                   font-bold text-white">
-      About <span className="text-pink-400">Me</span>
-    </h1>
+    <h1 className='absolute top-16 md:top-20 left-6 md:left-32 z-10 bg-transparent text-3xl sm:text-4xl md:text-6xl font-bold text-white'>
+      About <span className='text-pink-400'>Me</span>
+    </h1>  
 
     <div
       ref={bref}
-      className="
-        absolute
-        top-32 sm:top-40 md:top-56 lg:top-72
-        left-4 sm:left-8 md:left-16 lg:left-24
-        flex flex-col lg:flex-row
-        gap-6
-        border-t-2 border-gray-300
-        pt-6
-        w-[92%] sm:w-[85%] md:w-[80%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%]
-        scale-x-0 origin-center
-      "
+      className='
+      absolute 
+      top-40 sm:top-52 md:top-80
+      left-6 md:left-20
+      flex flex-col md:flex-row gap-4
+      border-t-2 border-gray-300
+      px-6 md:px-10 py-6 md:p-8
+      w-[90%] md:w-[75%]
+      scale-x-0 origin-center
+      '
     >
-      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl 
-                     font-bold text-gray-300 
-                     lg:w-200">
+      <h1 className='text-2xl sm:text-3xl md:text-5xl font-bold text-gray-300 md:w-1/2'>
         I'm a MERN Stack Developer
       </h1>
 
-      <h4 className="
-        text-sm sm:text-base md:text-lg lg:text-xl 
-        text-gray-300 
-        leading-relaxed
-        w-full lg:w-auto
-        max-w-none
-      ">
+      <h4 className='text-sm sm:text-base md:text-lg text-gray-300 md:w-1/2'>
         I'm a passionate and self-motivated web developer with a strong focus on building fast, interactive, and user-friendly applications using modern technologies including{" "}
-        <span className="text-pink-400">
-          React Node Express Mongodb Firebase Tailwindcss Gsap <span className="text-gray-300">&</span> Three J's
+        <span className='text-pink-400'>
+          React Node Express Mongodb Firebase Tailwindcss Gsap <span className='text-gray-300'>&</span> Three J's
         </span>
       </h4>
     </div>

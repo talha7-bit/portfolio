@@ -8,62 +8,17 @@ import pic6 from '../assets/stream.PNG'
 import pic7 from '../assets/hms.PNG'
 import pic8 from "/particlessystem.PNG"
 import pic9 from "/mountain.PNG"
-import pic10 from "/torus.PNG"
-import pic11 from "/mac.PNG"
-import pic12 from "/refraction.PNG"
-import pic13 from "/noise.PNG"
-import pic14 from "/social.PNG"
 
 import { motion } from 'framer-motion'
 
 const projects = [
-   {
-  id: 14,
-    title: "Social Media App",
-    description: "a full stack project build using react express & mongodb",
-    img: pic14,
-    href:"https://frrsocial.vercel.app/",
-    tags: ["react","express","mongodb"]
-  },
-  {
-  id: 13,
-    title: "refractive bg",
-    description: "a glassy background build using three js and react",
-    img: pic13,
-    href:"https://noisee-five.vercel.app/",
-    tags: ["react","three js"]
-  },
-   {
-  id: 12,
-    title: "waterrefraction",
-    description: "waterrefraction build using three js and react",
-    img: pic12,
-    href:"https://refractions-lilac.vercel.app/",
-    tags: ["react","three js"]
-  },
-  {
-  id: 11,
-    title: "3D macbook",
-    description: "macbook titlepage particles build using three js and react",
-    img: pic11,
-    href:"https://macb.vercel.app/",
-    tags: ["react","three js","gsap"]
-  },
-   {
-  id: 10,
-    title: "Three js effect",
-    description: "animating particles build using three js and react",
-    img: pic10,
-    href:"https://toruss.vercel.app/",
-    tags: ["react","three js","gsap"]
-  },
   {
   id: 9,
     title: "Three js effect",
     description: "mountain build using three js and react",
     img: pic9,
     href:"https://mountainss.vercel.app/",
-    tags: ["react","three js","gsap"]
+    tags: ["react","three js"]
   },
   {
   id: 8,
@@ -71,7 +26,7 @@ const projects = [
     description: "Moving particles build using three js and react",
     img: pic8,
     href:"https://particlessystem.vercel.app/",
-    tags: ["react","three js","gsap"]
+    tags: ["react","three js"]
   },
   {
   id: 6,
@@ -170,12 +125,12 @@ const neoncolors=[
   }
 
   return (
-    <div className='scroll-mt-16 md:scroll-mt-20 mb-20 w-screen h-[80vh] flex flex-col items-center justify-center' id='projects'>
-      <h1 className='text-3xl font-bold text-pink-500 '>Projects<span className='text-primary mx-2'>Featured</span></h1>
-      <p className='mt-1 text-sm text-white'>Below is the list of the projects I have made during my learning</p>
+    <div className='scroll-mt-16 md:scroll-mt-20 mb-20 w-screen h-screen flex flex-col items-center justify-center' id='projects'>
+      <h1 className='text-3xl font-bold text-primary-foreground '>Projects<span className='text-primary mx-2'>Featured</span></h1>
+      <p className='mt-1 text-sm'>Below is the list of the projects I have made during my learning</p>
       <div className='relative w-full max-w-sm md:max-w-6xl h-[36rem] overflow-hidden mx-auto'>
 
-       
+        {/* Slide buttons */}
         <button
           onClick={prevSlide}
           className='absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black text-white px-3 py-1 rounded-full'
@@ -189,7 +144,7 @@ const neoncolors=[
           ❯
         </button>
 
-       
+        {/* Slider container */}
         <div
          
           className='flex transition-transform duration-500 ease-in-out h-full '
@@ -218,7 +173,7 @@ const neoncolors=[
                 {project.tags.map(tag => (
                   <h3
                     key={tag}
-                    className='px-3 py-1 mt-1 rounded-xl bg-primary text-white'
+                    className='px-3 py-1 mt-1 rounded-xl bg-primary text-primary-foreground'
                   >
                     {tag}
                   </h3>
@@ -227,8 +182,8 @@ const neoncolors=[
               </div>
                
               <div className='text-left w-full mt-15 md:mt-2'>
-                <h1 className='text-2xl font-bold text-white'>{project.title} <a href={project.href}><button className='bg-primary text-sm text-foreground mx-15 px-2 py- rounded hover:bg-blue-800 transition cursor-pointer mt-2'>Live</button></a></h1>
-                <p className='text-sm text-white'>{project.description}</p>
+                <h1 className='text-2xl font-bold text-primary'>{project.title} <a href={project.href}><button className='bg-primary text-sm text-foreground mx-15 px-2 py- rounded hover:bg-blue-800 transition cursor-pointer mt-2'>Live</button></a></h1>
+                <p className='text-sm text-foreground'>{project.description}</p>
               </div>
             </motion.div>
             

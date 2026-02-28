@@ -45,11 +45,7 @@ const Hhome = () => {
       varying vec2 vUv;
       varying vec3 vPosition;
       void main(){
-        vec4 color=texture2D(uTexture,vUv);
-        gl_FragColor=color;
-        if(color.r<1.0){
-        discard;
-        }
+      gl_FragColor=texture2D(uTexture,vUv);
       }
       `
     })
@@ -149,7 +145,7 @@ const Hhome = () => {
   }, []);
 
   return (
-    <div id='home' ref={ref} className='w-full h-screen overflow-hidden'></div>
+    <div ref={ref} className='w-full h-screen overflow-hidden'></div>
   )
 }
 

@@ -5,11 +5,11 @@ const Skills = () => {
   const skills=[
     
     {name:"express js",level:90,category:"backned"},
-    {name:"three js",level:70,category:"frontened"},
     {name:"javascript",level:85,category:"frontened"},
     {name:"react",level:80,category:"frontened"},
-    {name:"tailwindcss",level:90,category:"frontened"},
+    {name:"tailwindcss",level:85,category:"frontened"},
     {name:"firebase",level:90,category:"frontened"},
+    {name:"github",level:80,category:"frontened"},
     {name:"mongodb",level:80,category:"backned"},
     {name:"gsap",level:90,category:"frontened"}
 ]   
@@ -41,7 +41,7 @@ const neoncolors=[
       }}
       >
         <div className='text-2xl font-bold' style={{color:neon}}>{skill.level}%</div>
-        <div className='text-sm mt-1 uppercase traking-wide text-white'>{skill.name}</div>
+        <div className='text-sm mt-1 uppercase traking-wide text-foreground'>{skill.name}</div>
 
       </motion.div>  
       )

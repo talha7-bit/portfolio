@@ -24,6 +24,7 @@ const Wrapper = () => {
           <About />
           <Skills />
           <Projects />
+          <Contacts />
         </main>
       </div>
     </div>

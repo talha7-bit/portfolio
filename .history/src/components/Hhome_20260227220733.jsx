@@ -45,11 +45,7 @@ const Hhome = () => {
       varying vec2 vUv;
       varying vec3 vPosition;
       void main(){
-        vec4 color=texture2D(uTexture,vUv);
-        gl_FragColor=color;
-        if(color.r<1.0){
-        discard;
-        }
+      gl_FragColor=texture2D(uTexture,vUv);
       }
       `
     })
@@ -88,9 +84,16 @@ const Hhome = () => {
     disturb();
 
     function handleResize() {
-      const width = container.clientWidth;
-      const height = container.clientHeight;
-      camera.aspect = width / height;
+  const width = container.clientWidth;
+  const height = container.clientHeight;
+
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+  renderer.setSize(width, height);
+
+  const scaleFactor = camera.aspect >= 1 ? camera.aspect : 1;
+  mesh.scale.x = scaleFactor;
+
       camera.updateProjectionMatrix();
       renderer.setSize(width, height);
     }
@@ -149,7 +152,7 @@ const Hhome = () => {
   }, []);
 
   return (
-    <div id='home' ref={ref} className='w-full h-screen overflow-hidden'></div>
+    <div ref={ref} className='w-full h-screen overflow-hidden'></div>
   )
 }
 
