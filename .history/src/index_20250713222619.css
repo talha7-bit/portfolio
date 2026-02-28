@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-
-*,body{
-background-color: black;
-}
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
